@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-background">
+        <!-- Video background (fallback to gradient) -->
+        <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">RR Innovexa Solutions Ltd</h1>
+        <p class="hero-subtitle">Empowering Students with Customized Academic Projects & Complete Technical Guidance</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+                <h3>200+</h3>
+                <p>Happy Students</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Success Rate</p>
+            </div>
+        </div>
+        <div class="hero-buttons">
+            <a href="{{ url_for('services') }}" class="btn btn-primary">
+                <i class="fas fa-rocket"></i> Our Services
+            </a>
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i> Start Project
+            </a>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose RR Innovexa Solutions Ltd?</h2>
+        <p class="section-subtitle">We provide end-to-end support for your academic success</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Academic Excellence</h3>
+                <p>Detailed guidance and explanation for complete understanding of concepts with proper documentation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Customized Projects</h3>
+                <p>Tailored solutions for diploma, engineering, and B.Sc computer science students across domains.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-support"></i>
+                </div>
+                <h3>Complete Support</h3>
+                <p>24/7 support until exam with complete documentation, source code, and implementation guidance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>On-Time Delivery</h3>
+                <p>We understand academic deadlines and ensure timely delivery of all projects and documentation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <h2 class="section-title">Our Expertise Areas</h2>
+        <p class="section-subtitle">Comprehensive project solutions across multiple technologies</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon python">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python Projects</h3>
+                <p>Web Development, Data Science, Machine Learning, Automation, and more with complete learning roadmap.</p>
+                <ul>
+                    <li>Django/Flask Web Apps</li>
+                    <li>ML & AI Projects</li>
+                    <li>Data Analysis</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon java">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java Projects</h3>
+                <p>Enterprise applications, Android development, Web services with OOP concepts and advanced features.</p>
+                <ul>
+                    <li>Spring Boot</li>
+                    <li>Android Apps</li>
+                    <li>Web Services</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon embedded">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3>Electronics & Embedded</h3>
+                <p>Microcontroller programming, circuit design, PCB development, and hardware integration projects.</p>
+                <ul>
+                    <li>Arduino Projects</li>
+                    <li>PCB Design</li>
+                    <li>Circuit Design</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon iot">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>IoT Projects</h3>
+                <p>Smart systems, home automation, industrial IoT with Arduino, ESP32, and cloud integration.</p>
+                <ul>
+                    <li>Home Automation</li>
+                    <li>Smart Systems</li>
+                    <li>Cloud IoT</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Project Enquiry</h3>
+                <p>Submit your project requirements through our contact form</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Consultation</h3>
+                <p>We discuss your requirements and provide the best solution</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Project Development</h3>
+                <p>Our experts develop your project with regular updates</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Delivery & Support</h3>
+                <p>Complete project delivery with documentation and support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Your Academic Project?</h2>
+            <p>Get professional guidance, complete source code, documentation, and 24/7 support for your academic success.</p>
+            <div class="cta-buttons">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Start Your Project
+                </a>
+                <a href="tel:+919632011049" class="btn btn-secondary btn-large">
+                    <i class="fas fa-phone"></i> Call Now: +91 9632011049
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

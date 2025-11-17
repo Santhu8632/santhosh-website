@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Contact Hero -->
+<section class="contact-hero">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Ready to start your academic project? Contact us for customized solutions</p>
+    </div>
+</section>
+
+<!-- Contact Form & Info -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h2><i class="fas fa-paper-plane"></i> Project Enquiry Form</h2>
+                <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                
+                <form method="POST" class="enquiry-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="college"><i class="fas fa-university"></i> College/University *</label>
+                            <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_no"><i class="fas fa-phone"></i> Contact Number *</label>
+                            <input type="tel" id="contact_no" name="contact_no" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="domain"><i class="fas fa-laptop-code"></i> Project Domain *</label>
+                        <select id="domain" name="domain" required>
+                            <option value="">Select your project domain</option>
+                            <option value="Python">Python Projects</option>
+                            <option value="Java">Java Projects</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Machine Learning">Machine Learning</option>
+                            <option value="IoT">IoT Projects</option>
+                            <option value="Electronics">Electronics & Embedded</option>
+                            <option value="Mobile App">Mobile Application</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project_description"><i class="fas fa-file-alt"></i> Project Requirements *</label>
+                        <textarea id="project_description" name="project_description" placeholder="Describe your project requirements, technologies preferred, deadline, and any specific features..." rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> Submit Enquiry
+                    </button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2><i class="fas fa-info-circle"></i> Contact Information</h2>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Santhosh Kumar K R</h3>
+                        <p>Founder & CEO</p>
+                        <p>RR Solutions Ltd</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Phone / WhatsApp</h3>
+                        <p>+91 9632011049</p>
+                        <a href="tel:+919632011049" class="contact-link">Call Now</a>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Address</h3>
+                        <p>sr38238@gmail.com</p>
+                        <a href="mailto:sr38238@gmail.com" class="contact-link">Send Email</a>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Location</h3>
+                        <p>RR Solutions Ltd</p>
+                        <p>Academic Project Specialists</p>
+                    </div>
+                </div>
+                
+                <div class="business-hours">
+                    <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <span>Monday - Friday</span>
+                            <span>9:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Saturday</span>
+                            <span>10:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Sunday</span>
+                            <span>Emergency Support</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-contact">
+                    <h3><i class="fas fa-share-alt"></i> Follow & Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Santhu8632" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/santhosh-kumar-k-r-3aa2472b7/" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009519812938" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/_pvt_pacchi_?igsh=OGtvcXp5enRubWJm&utm_source=qr" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Contact -->
+<section class="quick-contact">
+    <div class="container">
+        <div class="quick-contact-grid">
+            <div class="quick-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Call Us</h3>
+                <p>+91 9632011049</p>
+                <a href="tel:+919632011049" class="btn btn-outline">Call Now</a>
+            </div>
+            <div class="quick-contact-item">
+                <i class="fas fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>+91 9632011049</p>
+                <a href="https://wa.me/919632011049" class="btn btn-outline">Message Now</a>
+            </div>
+            <div class="quick-contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>sr38238@gmail.com</p>
+                <a href="mailto:sr38238@gmail.com" class="btn btn-outline">Send Email</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
