@@ -1,10 +1,51 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://your-hosted-app.example/">
-  <title>Redirecting…</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Santhosh Website — Redirecting</title>
+
+  <!-- fast redirect: change the URL below to wherever you want visitors to go -->
+  <meta http-equiv="refresh" content="1; url=https://github.com/santhu8632/santhosh-website" />
+
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+         display:flex;align-items:center;justify-content:center;height:100vh;margin:0;
+         background:#0b1220;color:#e6eef8}
+    .card{max-width:720px;padding:28px;border-radius:10px;
+          background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+          box-shadow:0 6px 18px rgba(2,6,23,0.6);text-align:center}
+    h1{margin:0 0 8px 0;font-size:20px}
+    p{margin:0 0 12px 0;line-height:1.4;color:#bfd7ff}
+    a.button{display:inline-block;padding:10px 16px;border-radius:8px;
+             background:rgba(255,255,255,0.06);color:#dbefff;text-decoration:none;
+             border:1px solid rgba(255,255,255,0.04)}
+    small{display:block;margin-top:12px;color:#9fb8df;font-size:12px}
+  </style>
+
+  <!-- JavaScript fallback redirect (works instantly if JS enabled) -->
+  <script>
+    // Change this URL to the final hosting URL if/when you deploy the Flask app elsewhere.
+    const target = "https://github.com/santhu8632/santhosh-website";
+    // If you have a deployed app (Render/Heroku/etc), put that URL here instead:
+    // const target = "https://your-app.onrender.com";
+
+    // Immediately redirect if JS is enabled:
+    window.location.replace(target);
+  </script>
 </head>
 <body>
-  Redirecting… <a href="https://your-hosted-app.example/">Click here</a>.
+  <div class="card" role="main">
+    <h1>Redirecting…</h1>
+    <p>If you are not redirected automatically, click the button below.</p>
+
+    <a class="button" href="https://github.com/santhu8632/santhosh-website" target="_blank" rel="noopener">
+      Open project on GitHub
+    </a>
+
+    <small>
+      Note: This page is a temporary static redirect for GitHub Pages. It does not run the Flask backend.
+    </small>
+  </div>
 </body>
 </html>
