@@ -15,7 +15,7 @@ with app.app_context():
     db.create_all()
     # Create admin user if not exists
     if not Admin.query.filter_by(username='admin').first():
-        admin = Admin(username='admin', password='admin123')
+        admin = Admin(username='sr38238', password='Santhu@8632')
         db.session.add(admin)
         db.session.commit()
         print("✅ Admin user created: admin / admin123")
